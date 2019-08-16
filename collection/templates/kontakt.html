@@ -1,0 +1,124 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+
+	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="author" content="Benedikt Kleppmann">
+	<title>Data Science for Good Aalen - Kontakt</title>
+	
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+	
+
+	<link rel="shortcut icon" href="{% static 'images/logo.png'%}">
+	<style>
+	.box {
+		background-color:rgb(39, 40, 34);
+	}
+	
+	.navbar-header {
+		padding-left: 0px;
+	}
+	
+	.navbar-brand { 
+	    padding: 7px 26px;
+	}
+	
+	#background-picture {
+		margin-top: -54px;
+	}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+
+
+
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo_only_background.png'%}" height="37"></a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="{% url 'home' %}">Home</a></li>
+		  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysen <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="{% url 'analyse_12_09_2019' %}">12. September 2019</a></li>
+			  <li><a href="{% url 'analyse_26_09_2019' %}">26. September 2019</a></li>
+			  <li><a href="{% url 'analyse_10_10_2019' %}">10. Oktober 2019</a></li>
+			</ul>
+		  </li>
+		  <li><a href="{% url 'leute' %}">Leute</a></li>
+		  <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+		</ul>
+	  </div>
+	</nav>
+
+
+
+	<section id="background-picture" class="carousel">
+		<div style="background-image: url(../static/images/2.jpg);
+					background-attachment: fixed;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					padding: 200px 0;
+					background-position: 21% 28%;
+					margin-top:54px;">
+		</div>
+	</section>
+
+
+		
+	<section>
+		<div class="container">
+			<div class="box first last">
+				<div class="center">
+					<h2>Kontakt</h2>
+				</div>
+				<div class="lead left-aligned">
+					Benedikt Kleppmann<br>
+					Humboldtstra&szlig;e 4<br>
+					D-73457 Essingen<br>
+					<br>
+					<i class="fas fa-envelope"></i> benedikt@kleppmann.de<br>
+					<i class="fas fa-phone"></i> +49 7365 6753<br>
+					<i class="fas fa-mobile-alt"></i> &nbsp;+49 176 28706442<br>
+				</div>
+				<div class="center">
+					<h2>Impressum</h2>
+				</div>
+				<div class="lead left-aligned">
+					Die Datenanalysen auf dieser Webseite wurden alle mit öffentlichen Daten gemacht. Die Quellen der Daten sind auf der jeweiligen Seite verlinkt. <br>					
+					Wir übernehmen keine Verantwortung für die Richtigkeit der Daten, noch für die Richtigkeit daraus gewonnen Analysen.<br>
+					<br>
+					---------------------<br>
+					<br>
+					The analyses on this website were made using public data. You will find links to the data sources on the respective pages.<br>
+					We do not guarantee for the correctness of the data, nor for the correctness of the evaluations. <br>
+					<br>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	 <script>
+	  $('.carousel').carousel({
+	   interval: 3000
+	  });
+	 </script>  
+	 
+
+</body>
+</html>
