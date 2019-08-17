@@ -17,4 +17,5 @@ urlpatterns = [
     url(r'^leute/$', views.leute, name='leute'),
     url(r'^kontakt/$', views.kontakt, name='kontakt'),
     url(r'^test_page/$', views.test_page, name='test_page'),
+    path('admin/', admin.site.urls),
 ]
