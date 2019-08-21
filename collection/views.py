@@ -10,6 +10,8 @@ def home(request):
     return render(request, 'home.html')
 
 
+
+
 def analyse_12_09_2019(request):
     return render(request, 'analyse_12_09_2019.html')
 
@@ -28,5 +30,9 @@ def kontakt(request):
 
 
 
+
 def test_page(request):
+    return render(request, 'test_page.html')
+
+def test_page2(request):
     return render(request, 'test_page.html')
