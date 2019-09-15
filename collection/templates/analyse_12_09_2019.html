@@ -35,8 +35,13 @@
 	}
 	
 	.tableauPlaceholder {
-		margin-left: 20%;
+		margin-left: 0px;
 	}
+	
+	.tableauViz {
+		max-width: none !important;
+	}
+
 	</style>
 
 
@@ -86,21 +91,61 @@
 			<div class="box first last">
 				<div class="center">
 					<h2>Feinstaub</h2>
+					<br>
+					Collaboration Partner: <a href="https://www.bund-ostwuerttemberg.de/bund-ov-aalen/">BUND Ostwürttemberg</a><br>
+					Data Source: <a href="http://archive.luftdaten.info/">http://archive.luftdaten.info/</a><br>
 				</div>
 				<div class="lead left-aligned">
-					Datenquelle: <a href="http://archive.luftdaten.info/">http://archive.luftdaten.info/</a><br>
-					Seite erstellt am: 12.09.2019
+
 				</div>
-				<br><br><br>
-				<h3>Test</h3>
 				<br>
+				<br>
+				<br>
+				<br>
+
+			
+				<h3>Particulate sensors</h3>
+				<br>
+				<div class="row" style="display:flex; align-items:center;">
+					<div class="col-md-9">
+						<p class="lead left-aligned">	
+							Particulates are solid or liquid particles with a diameter between 1 and 50 μm. They can cause many respatory illnesses such as lung cancer.
+							Particulate pollution has become such a significant problem in many German cities that these cities have introduced low emission zones in which expecially polluting cars may not drive.
+							And the emission rates are monitored with particulate matter sensors.
+							<br><br>
+							In all of Baden-Württemberg there are however only approx. 30 official particulate matter sensors&nbsp;- this is by far not enough to get an accurate picture of the situation!
+							This ispired <a href="https://www.codefor.de/stuttgart/">OK Lab Stuttgart</a>&nbsp;- a group of volunteering engineers&nbsp;- to develop a cheap particulate matter sensor. 
+							To build your own particualte matter sensor, you can now follow <a href="https://luftdaten.info/feinstaubsensor-bauen/#feinstaubsensor-komponenten">their instructions</a>, or better, attend a <a href="https://www.bund-ostwuerttemberg.de/themen-und-projekte/feinstaub/buergerforschungsprojekt-zur-luftqualitaet/">workshop</a> where instructors help you build your sensor.
+							In fact over 18 000 people have already done this!<br><br>
+							
+							These 18 000 sensors are producing a wealth of rich and interesting data!<br>
+							Lets see what we can discover from it...<br>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<a href="{% static 'images/2019-09-12/sensor_kit.jpg'%}"><img src="{% static 'images/2019-09-12/sensor_kit.jpg'%}" class="img-responsive mr-3 img-thumbnail"></a>
+						<a href="{% static 'images/2019-09-12/sensor.jpg'%}"><img src="{% static 'images/2019-09-12/sensor.jpg'%}" class="img-responsive mr-3 img-thumbnail"></a>
+						<div style="margin-left:10px">top: sensor components<br>bottom: assembled sensor</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<h3>The Legal Limit</h3>
 				<div class="lead left-aligned">
-					bla bla bla
+					<br>
+					According to <a href="https://www.umweltbundesamt.de/bild/tab-grenzwerte-fuer-den-schadstoff-feinstaub">German law</a> the average paricaluate pollution is not allowed to exceed 50 µg/m³ for more than <b>35 days a year</b>.<br>
+					(The european guidelines 2008/50/EG acctually suggest allowing no more than <b>7 days a year</b> with pollution values exceeding 50 µg/m³.)<br>
+					<br>
+					On the map below, you can see, that the situation is much grimmer than expected!!<br>
+					It shows the locations where the average particulate pollution has exceeded 50 µg/m³ for more than 100 days in 2019 (01.01.2019 - 25.08.2019).<br>
+					By moving the slider below the map, you can change the threshold to be any amount of days (not only 100).
+					
 					<br><br><br>
 					<div class="center">
-						<div class='tableauPlaceholder' id='viz1565975565616' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Test-Irisdataset&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Test-Irisdataset&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Test-Irisdataset&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565975565616');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						<div class='tableauPlaceholder' id='viz1568370736118' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;Feinstaub2019-09-12&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Feinstaub2019-09-12&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;Feinstaub2019-09-12&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1568370736118');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 					</div>
-			  </div>
+				</div>
 			</div>
 		</div>
 	</section>
