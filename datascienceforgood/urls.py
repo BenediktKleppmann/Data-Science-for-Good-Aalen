@@ -12,8 +12,8 @@ urlpatterns = [
     # ==================================================
     url(r'^$', views.home, name='home'),
     url(r'^/$', views.home, name='home'),
-    url(r'^analyse_12_09_2019/$', views.analyse_12_09_2019, name='analyse_12_09_2019'),
-    url(r'^analyse_26_09_2019/$', views.analyse_26_09_2019, name='analyse_26_09_2019'),
+    url(r'^feinstaub/$', views.feinstaub, name='feinstaub'),
+    url(r'^landnutzung/$', views.landnutzung, name='landnutzung'),
     url(r'^analyse_10_10_2019/$', views.analyse_10_10_2019, name='analyse_10_10_2019'),
     url(r'^leute/$', views.leute, name='leute'),
     url(r'^kontakt/$', views.kontakt, name='kontakt'),

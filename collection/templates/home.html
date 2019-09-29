@@ -50,9 +50,9 @@
 		  <li class="active"><a href="{% url 'home' %}">Home</a></li>
 		  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysen <span class="caret"></span></a>
 			<ul class="dropdown-menu">
-			  <li><a href="{% url 'analyse_12_09_2019' %}">12. September 2019</a></li>
-			  <li><a href="{% url 'analyse_26_09_2019' %}">26. September 2019</a></li>
-			  <li><a href="{% url 'analyse_10_10_2019' %}">10. Oktober 2019</a></li>
+			  <li><a href="{% url 'feinstaub' %}">Feinstaub</a></li>
+			  <li><a href="{% url 'landnutzung' %}">10. Oktober 2019</a></li>
+			  <li><a href="{% url 'analyse_10_10_2019' %}">24. Oktober 2019</a></li>
 			</ul>
 		  </li>
 		  <li><a href="{% url 'leute' %}">Leute</a></li>
@@ -95,7 +95,7 @@
 					This Meetup is a great opportunity to learn more about machine learning and data visualisation, to meet fellow data enthusiasts and to simulateously improve the world!<br>
 					<br>
 					
-			  </div>
+				</div>
 			  	<div class="center">
 					<h2>Mitmachen</h2>
 				</div>
@@ -111,7 +111,56 @@
 					We meet every second Thursday in the Innovationszentrum Aalen. You'll find the details about the next meetings on <a href="https://www.meetup.com/Data-Science-for-Good-Aalen/">this page.</a><br>
 					<br>
 					<br>
-			  </div>
+				</div>
+				<div class="center">
+					<h2>Unterstützer</h2>
+				</div>
+				<div class="row" style="display:flex; align-items:center;">
+					<div class="col-md-3">
+						<a  href="https://www.demokratie-leben.de/partnerschaften-fuer-demokratie.html">
+							<img src="{% static 'images/partnerschaft_fuer_demokratie.jpg'%}" class="img-responsive mr-2 img-thumbnail">
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="lead left-aligned">
+							<a href="https://www.demokratie-leben.de/partnerschaften-fuer-demokratie.html">
+								Partnerschaft für Demokratie
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="display:flex; align-items:center;">
+					
+					<div class="col-md-3">
+						<a href="https://www.innovationszentrum-aalen.de/">
+							<img src="{% static 'images/innoz.jpg'%}" class="img-responsive mr-2 img-thumbnail">
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="lead left-aligned">
+							<a href="https://www.innovationszentrum-aalen.de/">
+							Innovationszentrum Aalen
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row" style="display:flex; align-items:center;">
+					<div class="col-md-3">
+						<a href="">
+							<img src="{% static 'images/htw-aalen.jpg'%}" class="img-responsive mr-2 img-thumbnail">
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="lead left-aligned">
+							<a href="">
+								Hochschule Aalen
+							</a>
+						</div>
+					</div>
+				</div>
+
+			
 			</div>
 		</div>
 	</section>

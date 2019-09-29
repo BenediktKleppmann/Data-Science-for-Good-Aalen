@@ -41,6 +41,10 @@
 	.tableauViz {
 		max-width: none !important;
 	}
+	
+	#viz1569762529080 {
+		height: 745px !important;
+	}
 
 	</style>
 
@@ -60,9 +64,9 @@
 		  <li class="active"><a href="{% url 'home' %}">Home</a></li>
 		  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysen <span class="caret"></span></a>
 			<ul class="dropdown-menu">
-			  <li><a href="{% url 'analyse_12_09_2019' %}">12. September 2019</a></li>
-			  <li><a href="{% url 'analyse_26_09_2019' %}">26. September 2019</a></li>
-			  <li><a href="{% url 'analyse_10_10_2019' %}">10. Oktober 2019</a></li>
+			  <li><a href="{% url 'feinstaub' %}">Feinstaub</a></li>
+			  <li><a href="{% url 'landnutzung' %}">10. Oktober 2019</a></li>
+			  <li><a href="{% url 'analyse_10_10_2019' %}">24. Oktober 2019</a></li>
 			</ul>
 		  </li>
 		  <li><a href="{% url 'leute' %}">Leute</a></li>
@@ -144,6 +148,51 @@
 					<br><br><br>
 					<div class="center">
 						<div class='tableauPlaceholder' id='viz1568370736118' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;Feinstaub2019-09-12&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Feinstaub2019-09-12&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;Feinstaub2019-09-12&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1568370736118');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+					</div>
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				<h3>Clustering</h3>
+				<div class="lead left-aligned">
+					<br>
+					On the above map we see a large variation we can find some examples of different pollution values being measured by geographically very close sensors.
+					There can different reasons for this, e.g. if a sensor is located directly beside a busy road, it will measure higher values than the one that is 100 meters away.<br><br>
+					In order to get a more objective measure for the pollution, we therefore propose not looking at individual sensors, but at groups of sensors. 
+					By only considering the average pollution value of each group, the extreme values from individual sensors are averaged-out resulting in an objective measure for this area.<br><br>
+					In order to split the sensors into local groups, we used a K-Means clustering algorithm. 
+					The visualisation below shows the sensors coloured according to their group affiliation.
+					<br><br><br>
+					<div class="center">
+						<div class='tableauPlaceholder' id='viz1569762529080' style='position: relative; height:745px;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;D3&#47;D3F6P7PKZ&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;D3F6P7PKZ' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;D3&#47;D3F6P7PKZ&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1569762529080');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='1250px';vizElement.style.width='100%';vizElement.style.minHeight='387px';vizElement.style.maxHeight='687px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						In the following sections we will no longer consider the individual sensors and instead work with the groups/clusters.
+					</div>
+					
+					
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				<h3>New Years Eve</h3>
+				<div class="lead left-aligned">
+					<div class="row" style="display:flex; align-items:center;">
+						<div class="col-md-3">
+							<a href="{% static 'images/new year.jpg'%}"><img src="{% static 'images/new year.jpg'%}" class="img-responsive mr-3 img-thumbnail"></a>
+						</div>
+						<div class="col-md-9">
+							<div class="lead left-aligned">
+								According to <a href="https://www.umweltbundesamt.de/themen/dicke-luft-jahreswechsel">some sources</a>, the new years fireworks in Germany release about 4 500 Tonns of particulate matter. 
+								This corresponds 15% of the annual emmisssions from traffic. We therefore expect to observe a spike in the measured paticulate matter pollution around new year.
+								The graph below shows the daily average particulate matter pollutions in the days following new year 2019.
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="center">
+						<div class='tableauPlaceholder' id='viz1569762478563' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;an&#47;analysis22019-09-26&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='analysis22019-09-26&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;an&#47;analysis22019-09-26&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1569762478563');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='1250px';vizElement.style.width='100%';vizElement.style.minHeight='287px';vizElement.style.maxHeight='487px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 					</div>
 				</div>
 			</div>

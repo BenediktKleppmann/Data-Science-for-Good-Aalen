@@ -12,11 +12,11 @@ def home(request):
 
 
 
-def analyse_12_09_2019(request):
-    return render(request, 'analyse_12_09_2019.html')
+def feinstaub(request):
+    return render(request, 'feinstaub.html')
 
-def analyse_26_09_2019(request):
-    return render(request, 'analyse_26_09_2019.html')
+def landnutzung(request):
+    return render(request, 'landnutzung.html')
 
 def analyse_10_10_2019(request):
     return render(request, 'analyse_10_10_2019.html')
