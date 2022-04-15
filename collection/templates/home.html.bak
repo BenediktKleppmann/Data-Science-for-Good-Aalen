@@ -115,18 +115,67 @@
 					
 				</div>
 			  	<div class="center">
-					<h2>Join</h2>
+					<h2>Mitmachen</h2>
 				</div>
 				<div class="lead left-aligned">
-					If this sounds interesting to you, please join!<br>
-					We meet every second Thursday in the Cafe Extrablatt in Heidelberg. More details are <a href="https://www.meetup.com/data-science-for-good-heidelberg/">here.</a><br>
+					Du bist herzlich eingeladen mitzumachen!<br>
+					Du brauchst keine vorherige Erfahrung mit Datenanalyse um mitzumachen.<br>
+					Wir treffen uns jeden zweiten Donnerstag im Innovationszentrum Aalen. Auf <a href="https://www.meetup.com/Data-Science-for-Good-Aalen/">dieser Seite</a>dieser Seite findest du die details über die nächsten Treffen.<br>
 					<br>
 					---------------------<br>
 					<br>
-					Du bist herzlich eingeladen mitzumachen!<br>
-					Wir treffen uns jeden zweiten Donnerstag im Cafe Extrablatt in Heidelberg. Mehr Info dazu <a href="https://www.meetup.com/data-science-for-good-heidelberg/">hier</a>.<br>
+					If this sounds interesting to you, please join!<br>
+					Data enthusiasts with all levels of experience are very welcome!<br>
+					We meet every second Thursday in the Innovationszentrum Aalen. You'll find the details about the next meetings on <a href="https://www.meetup.com/Data-Science-for-Good-Aalen/">this page.</a><br>
 					<br>
 					<br>
+				</div>
+				<div class="center">
+					<h2>Unterstützer</h2>
+				</div>
+				<div class="row" style="display:flex; align-items:center;">
+					<div class="col-md-3">
+						<a  href="https://www.demokratie-leben.de/partnerschaften-fuer-demokratie.html">
+							<img src="{% static 'images/partnerschaft_fuer_demokratie.jpg'%}" class="img-responsive mr-2 img-thumbnail">
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="lead left-aligned">
+							<a href="https://www.demokratie-leben.de/partnerschaften-fuer-demokratie.html">
+								Partnerschaft für Demokratie
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="display:flex; align-items:center;">
+					
+					<div class="col-md-3">
+						<a href="https://www.innovationszentrum-aalen.de/">
+							<img src="{% static 'images/innoz.jpg'%}" class="img-responsive mr-2 img-thumbnail">
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="lead left-aligned">
+							<a href="https://www.innovationszentrum-aalen.de/">
+							Innovationszentrum Aalen
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row" style="display:flex; align-items:center;">
+					<div class="col-md-3">
+						<a href="">
+							<img src="{% static 'images/htw-aalen.jpg'%}" class="img-responsive mr-2 img-thumbnail">
+						</a>
+					</div>
+					<div class="col-md-9">
+						<div class="lead left-aligned">
+							<a href="">
+								Hochschule Aalen
+							</a>
+						</div>
+					</div>
 				</div>
 
 			

@@ -33,10 +33,6 @@
 	#background-picture {
 		margin-top: -54px;
 	}
-	
-	.tableauPlaceholder {
-		margin-left: 20%;
-	}
 	</style>
 
 
@@ -69,7 +65,7 @@
 
 
 	<section id="background-picture" class="carousel">
-		<div style="background-image: url(../static/images/6.jpg);
+		<div style="background-image: url(../static/images/2.jpg);
 					background-attachment: fixed;
 					background-size: 100%;
 					background-repeat: no-repeat;
@@ -85,19 +81,29 @@
 		<div class="container">
 			<div class="box first last">
 				<div class="center">
-					<h2>Landnutzung</h2>
+					<h2>Kontakt</h2>
 				</div>
 				<div class="lead left-aligned">
-					Datenquelle: <br>
-					Seite erstellt am: 
+					Benedikt Kleppmann<br>
+					Humboldtstra&szlig;e 4<br>
+					D-73457 Essingen<br>
+					<br>
+					<i class="fas fa-envelope"></i> benedikt@kleppmann.de<br>
+					<i class="fas fa-phone"></i> +49 7365 6753<br>
+					<i class="fas fa-mobile-alt"></i> &nbsp;+49 176 28706442<br>
 				</div>
-				<br><br><br>
-				<h3>Test</h3>
-				<br>
+				<div class="center">
+					<h2>Impressum</h2>
+				</div>
 				<div class="lead left-aligned">
-					bla bla bla
-					<br><br><br>
-
+					Die Datenanalysen auf dieser Webseite wurden alle mit öffentlichen Daten gemacht. Die Quellen der Daten sind auf der jeweiligen Seite verlinkt. <br>					
+					Wir übernehmen keine Verantwortung für die Richtigkeit der Daten, noch für die Richtigkeit daraus gewonnen Analysen.<br>
+					<br>
+					---------------------<br>
+					<br>
+					The analyses on this website were made using public data. You will find links to the data sources on the respective pages.<br>
+					We do not guarantee for the correctness of the data, nor for the correctness of the evaluations. <br>
+					<br>
 			  </div>
 			</div>
 		</div>
